@@ -1,17 +1,17 @@
-import 'package:coding_with_tea/src/constants/image_string.dart';
-import 'package:coding_with_tea/src/constants/size.dart';
 import 'package:coding_with_tea/src/constants/text_strings.dart';
-import 'package:coding_with_tea/src/features/authentication/screens/login/login_form.dart';
+import 'package:coding_with_tea/src/features/authentication/screens/register/register_form.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+import '../../../../constants/size.dart';
+
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,14 +21,13 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.all(tDefaultSize),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Image(image: AssetImage(tWelcomeScreen)),
               Text(tLoginTitle,
                   style: Theme.of(context).textTheme.displayMedium),
               Text(tLoginSubTitle,
                   style: Theme.of(context).textTheme.bodyMedium),
 
               // -- Form Section
-              LoginForm(),
+              const RegisterForm(),
             ]),
           ),
         ),
