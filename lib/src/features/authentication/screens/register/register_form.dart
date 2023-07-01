@@ -29,9 +29,9 @@ class _RegisterFormState extends State<RegisterForm> {
                 const SizedBox(height: 20.0),
                 TextFormField(
                   decoration: const InputDecoration(
-                    prefixIcon: Icon(Icons.person_2_outlined),
-                    labelText: tEmail,
-                    hintText: tEmail,
+                    prefixIcon: Icon(Icons.call_end_outlined),
+                    labelText: tPhoneNo,
+                    hintText: tPhoneNo,
                     border: OutlineInputBorder(),
                   ),
                 ),

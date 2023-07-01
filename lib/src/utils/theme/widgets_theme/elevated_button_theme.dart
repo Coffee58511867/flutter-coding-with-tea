@@ -5,8 +5,8 @@ import '../../../constants/size.dart';
 class TElevatedButtonTheme {
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      shape: RoundedRectangleBorder(),
       side: BorderSide(color: Colors.black12),
+      fixedSize: Size(300, 45),
       padding: EdgeInsets.symmetric(vertical: tButtonHeight),
     ),
   );

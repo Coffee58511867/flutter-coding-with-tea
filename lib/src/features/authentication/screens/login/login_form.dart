@@ -46,7 +46,19 @@ class _LoginFormState extends State<LoginForm> {
                 SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        onPressed: () {}, child: Text(tLogin.toUpperCase())))
+                        onPressed: () {}, child: Text(tLogin.toUpperCase()))),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text("OR"),
+                    SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                            onPressed: () {}, child: Text(tSignInWithGoogle))),
+                    TextButton(
+                        onPressed: () {}, child: Text(tAlreadyHaveAnAccount))
+                  ],
+                )
               ],
             )));
   }
