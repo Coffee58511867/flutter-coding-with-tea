@@ -48,14 +48,7 @@ class _HomePage1State extends State<HomePage1> {
               ),
               Expanded(
                 child: ElevatedButton(
-                    onPressed: () {},
-                    style: OutlinedButton.styleFrom(
-                      shape: RoundedRectangleBorder(),
-                      foregroundColor: Colors.amber,
-                      side: BorderSide(color: Colors.black12),
-                      padding: EdgeInsets.symmetric(vertical: tButtonHeight),
-                    ),
-                    child: Text(tRegister.toUpperCase())),
+                    onPressed: () {}, child: Text(tRegister.toUpperCase())),
               )
             ],
           )
