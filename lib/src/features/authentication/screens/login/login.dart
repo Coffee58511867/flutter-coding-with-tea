@@ -1,4 +1,5 @@
 import 'package:coding_with_tea/src/constants/image_string.dart';
+import 'package:coding_with_tea/src/constants/size.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -14,12 +15,13 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(tDefaultSize),
           child: const Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image(image: AssetImage(tWelcomeScreen)),
                 Text("Welcome Back"),
+                Text("Make it work, make it right, make it fast"),
               ]),
         ),
       ),
