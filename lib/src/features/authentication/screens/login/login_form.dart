@@ -93,7 +93,7 @@ class _LoginFormState extends State<LoginForm> {
                     const SizedBox(height: 10),
                     SizedBox(
                         width: double.infinity,
-                        child: ElevatedButton(
+                        child: OutlinedButton(
                             onPressed: () {}, child: Text(tSignInWithGoogle))),
                     const SizedBox(height: 20),
                     TextButton(
