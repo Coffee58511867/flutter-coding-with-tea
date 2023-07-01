@@ -2,6 +2,7 @@ import 'package:coding_with_tea/src/constants/text_strings.dart';
 import 'package:coding_with_tea/src/features/authentication/screens/register/register_form.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../constants/image_string.dart';
 import '../../../../constants/size.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -21,6 +22,7 @@ class _RegisterPageState extends State<RegisterPage> {
             padding: const EdgeInsets.all(tDefaultSize),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Image(image: AssetImage(tWelcomeScreen)),
               Text(tSignUpTitle,
                   style: Theme.of(context).textTheme.displayMedium),
               Text(tSignUpSubTitle,

@@ -56,11 +56,6 @@ class _RegisterFormState extends State<RegisterForm> {
                           icon: const Icon(Icons.remove_red_eye_sharp))),
                 ),
                 const SizedBox(height: 10.0),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                      onPressed: () {}, child: const Text(tForgetPassword)),
-                ),
                 SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(

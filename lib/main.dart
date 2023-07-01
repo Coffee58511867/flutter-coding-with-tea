@@ -1,4 +1,3 @@
-import 'package:coding_with_tea/src/features/authentication/screens/homepage/home_page.dart';
 import 'package:coding_with_tea/src/features/authentication/screens/login/login.dart';
 import 'package:coding_with_tea/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';

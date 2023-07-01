@@ -1,3 +1,4 @@
+import 'package:coding_with_tea/src/constants/size.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/text_strings.dart';
@@ -41,7 +42,45 @@ class _LoginFormState extends State<LoginForm> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                      onPressed: () {}, child: const Text(tForgetPassword)),
+                      onPressed: () {
+                        showModalBottomSheet(
+                            context: context,
+                            builder: (context) => Container(
+                                  padding: EdgeInsets.all(tDefaultSize),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(tForgetPasswordTitle,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .displayMedium),
+                                      Text(tForgetPasswordSubTitle,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodyMedium),
+                                      const SizedBox(height: 30.0),
+                                      Container(
+                                        padding: EdgeInsets.all(20.0),
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(10.0),
+                                            color: Colors.blue),
+                                        child: const Row(children: [
+                                          const Icon(Icons.mail_lock_outlined),
+                                          Column(
+                                            children: [
+                                              Text(tEmail),
+                                              Text(tResetViaEMail)
+                                            ],
+                                          )
+                                        ]),
+                                      )
+                                    ],
+                                  ),
+                                ));
+                      },
+                      child: const Text(tForgetPassword)),
                 ),
                 SizedBox(
                     width: double.infinity,
@@ -50,11 +89,13 @@ class _LoginFormState extends State<LoginForm> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text("OR"),
+                    const Text("OR"),
+                    const SizedBox(height: 10),
                     SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
                             onPressed: () {}, child: Text(tSignInWithGoogle))),
+                    const SizedBox(height: 20),
                     TextButton(
                         onPressed: () {}, child: Text(tAlreadyHaveAnAccount))
                   ],
