@@ -21,6 +21,24 @@ class _RegisterFormState extends State<RegisterForm> {
                 TextFormField(
                   decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.person_2_outlined),
+                    labelText: tFullName,
+                    hintText: tFullName,
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 20.0),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.person_2_outlined),
+                    labelText: tEmail,
+                    hintText: tEmail,
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 20.0),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.person),
                     labelText: tEmail,
                     hintText: tEmail,
                     border: OutlineInputBorder(),

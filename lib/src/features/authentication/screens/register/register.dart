@@ -21,9 +21,9 @@ class _RegisterPageState extends State<RegisterPage> {
             padding: const EdgeInsets.all(tDefaultSize),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(tLoginTitle,
+              Text(tSignUpTitle,
                   style: Theme.of(context).textTheme.displayMedium),
-              Text(tLoginSubTitle,
+              Text(tSignUpSubTitle,
                   style: Theme.of(context).textTheme.bodyMedium),
 
               // -- Form Section
