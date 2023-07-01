@@ -1,13 +1,14 @@
+import 'package:coding_with_tea/src/utils/theme/widgets_theme/text_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class TAppTheme {
+  TAppTheme._();
   static ThemeData lightTheme = ThemeData(
       brightness: Brightness.light,
       primarySwatch: Colors.green,
-      textTheme: TextTheme(
-          displayMedium:
-              GoogleFonts.montserrat(color: Colors.blue, fontSize: 30)));
+      textTheme: TTextTheme.lightTextTheme,
+      elevatedButtonTheme:
+          ElevatedButtonThemeData(style: ElevatedButton.styleFrom()));
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
   );
