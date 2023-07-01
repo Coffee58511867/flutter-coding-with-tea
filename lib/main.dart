@@ -1,3 +1,4 @@
+import 'package:coding_with_tea/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(brightness: Brightness.light),
-      darkTheme: ThemeData(brightness: Brightness.dark),
-      themeMode: ThemeMode.dark,
+      theme: TAppTheme.lightTheme,
+      darkTheme: TAppTheme.darkTheme,
+      themeMode: ThemeMode.system,
       home: const HomePage(),
     );
   }
@@ -35,8 +36,9 @@ class _HomePageState extends State<HomePage> {
         title: const Text("My HomePage"),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text("Goding with Tea"),
+      body: Center(
+        child: Text("Goding with Tea",
+            style: Theme.of(context).textTheme.displayMedium),
       ),
     );
   }
